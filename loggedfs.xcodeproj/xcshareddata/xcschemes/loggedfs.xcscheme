@@ -65,11 +65,15 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "/tmp/TEST_LOGGED_FS"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "/tmp/TEST_LOGGED_FS_2"
             isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/danilkorotenko/scanOnce"
+            isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "/Volumes/UNTITLED"

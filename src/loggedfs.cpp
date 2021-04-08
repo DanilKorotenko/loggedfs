@@ -804,7 +804,6 @@ static bool processArgs(int argc, char *argv[], LoggedFS_Args *out)
 #ifdef linux
 #define COMMON_OPTS "nonempty,use_ino,attr_timeout=0,entry_timeout=0,negative_timeout=0"
 #else
-//#define COMMON_OPTS "debug,use_ino,attr_timeout=0,entry_timeout=0,negative_timeout=0,allow_other,kill_on_unmount,volname=LoggedFS"
 #define COMMON_OPTS "use_ino,attr_timeout=0,entry_timeout=0,negative_timeout=0,allow_other,kill_on_unmount,volname=LoggedFS"
 #endif
 
@@ -994,10 +993,6 @@ int main(int argc, char *argv[])
         fuse_main(loggedfsArgs->fuseArgc,
                   const_cast<char **>(loggedfsArgs->fuseArgv), &loggedFS_oper, NULL);
 #endif
-
         defaultLogger->info("LoggedFS closing.");
-
-
-
     }
 }
